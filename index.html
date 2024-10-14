@@ -67,6 +67,22 @@
             padding: 150px 0 100px;
             position: relative;
         }
+        /* Responsive design for mobile devices */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 100px 0 80px; /* Adjust padding for smaller screens */
+                background-size: cover; /* Ensures the image still covers the background */
+                background-position: center; /* Keeps it centered */
+            }
+        
+            .hero h1 {
+                font-size: 32px; /* Adjust font size for mobile view */
+            }
+        
+            .hero .subtitle {
+                font-size: 18px; /* Adjust subtitle size for mobile */
+            }
+        }
         .hero::before {
             content: '';
             position: absolute;
